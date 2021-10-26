@@ -14,6 +14,12 @@ body{
     background-repeat: no-repeat;
     background-size: 100%;
     margin: 0;
+    height: 100vh;
+  
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
 }
 
@@ -30,32 +36,23 @@ p{
 }
 
 
-.attribution {
-    font-size: 11px;
-    text-align: center;
-  }
-
-.attribution a {
-    color: hsl(228, 45%, 44%);
-}
 
 .card{
-  display: inline-block;
+
   background-image: url(images/illustration-hero.svg);
   background-repeat: no-repeat;
   background-color: var(--neutral-pale-blue-color);
   width: 450px;
   height: 660px;
-  border-radius:5%;
+  border-radius:30px;
 
-  margin-top: 5%;
-  margin-left: 50%;
-  transform: translate(-225px);
+
 
 }
 
 .container{
-  margin: 55% 15% 0%;
+  margin: 240px 45px 0%;
+
 }
 
 .plan-box{
@@ -136,20 +133,21 @@ p{
 }
 
 
-.box-shadow:after {
-  content:"";
-  position:absolute;
-  width:100%;
-  bottom:-10px;
-  z-index:-1;
-  transform:scale(.9);
-  box-shadow: 0px 0px 30px 2px #0000008c;
-}
+
 
 
 @media only screen and (max-width: 1440px) {
   body {
     background-image: url(images/pattern-background-mobile.svg); 
+  }
+
+  .card{
+    border-radius:20px;
+  }
+
+  .container{
+    margin: 240px 20px 0%;
+  
   }
 
 
